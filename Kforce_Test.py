@@ -32,13 +32,9 @@
 
 
 def twoSum(nums, target):
-    numd = {}
-
     for i in range(len(nums)):
-        numd[i] = nums[i]
-    print(numd)
-    for n in numd:
-        print(n)
+        if (target - nums[i]) in nums[i+1:len(nums)]:
+            print(nums[i+1:len(nums)].index(target - nums[i]))
 
 
 print(twoSum([3, 3], 6))
