@@ -31,10 +31,15 @@
 # print(matchcnt)
 
 
-def twoSum(nums, target):
-    for i in range(len(nums)):
-        if (target - nums[i]) in nums[i+1:len(nums)]:
-            print(nums[i+1:len(nums)].index(target - nums[i]))
+# def twoSum(nums, target):
+#     for i in range(len(nums)):
+#         if (target - nums[i]) in nums[i+1:len(nums)]:
+#             print(nums[i+1:len(nums)].index(target - nums[i]))
 
 
-print(twoSum([3, 3], 6))
+# print(twoSum([3, 3], 6))
+
+s = ""
+for n in range(1, 6):
+    s = s + str(n)
+print(s)
